@@ -55,7 +55,6 @@ body{
 
 }
 .line{
-    width: 100%;
     max-width: 7rem;
     height: 0.25rem;
     background-color:white;
@@ -68,7 +67,7 @@ body{
     font-weight:400;
 }
 .portfolio{
-    padding: 6rem;
+    padding: 70px;
 }
 .portfolio-caption{
     text-align: center;
@@ -82,9 +81,8 @@ body{
     width: 100%;
 }
 .portfolio-images img{
-    width: 32%;
+    width: 400px;
     border-radius: 10px;
-    margin-right: 0.5%;
     margin-bottom: 30px;
 }
 .image-row{
@@ -103,11 +101,11 @@ body{
 }
 .about-content{
     padding: 0 19%;
-    text-align: left;
+    text-align:left;
 }
 .about-p{
-    width: 40%;
-    margin-right: 10px;
+    width: 350px;
+    margin: 10px;
     font-size: 20px;
     font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -126,4 +124,43 @@ body{
 .download-btn:hover{
     background-color: white;
     color: black;
+}
+.icon-container svg{
+    width: 40px;
+    height: 40px;
+    display: inline;
+}
+.contact{
+    padding:96px 0px;
+    background-color: #ffffff;
+    text-align: center;
+    width: 100%;
+}
+.contact h2{
+    color: #2C3E50;
+    font-weight: 700;
+    font-size: 40px;
+}
+.contact-content{
+    padding: 0 19%;
+    text-align:left;
+}
+.contact-p{
+    width: 350px;
+    margin: 10px;
+    font-size: 20px;
+    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.inputs-div{
+    width: 100%;
+}
+.inputs-div input{
+    padding: 24px 48px 24px 0px;
+    width: 50%;
+    margin: 10px 50px;
+    border-bottom: 1px solid #2C3E50; 
+   border-top: none;
+   border-right: none;
+   border-left: none;
+   outline: none;
 }
