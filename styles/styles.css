@@ -156,6 +156,11 @@ body{
 }
 .inputs-div input{
     padding: 24px 48px 24px 0px;
-    width: 100%;
-    margin: ;
+    width: 50%;
+    margin: 10px 50px;
+    border-bottom: 1px solid #2C3E50; 
+   border-top: none;
+   border-right: none;
+   border-left: none;
+   outline: none;
 }
