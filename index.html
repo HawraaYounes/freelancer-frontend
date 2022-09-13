@@ -83,10 +83,13 @@
                     </div>
                 </div>
                 <div class="inputs-div">
-                    <div><input type="text" placeholder="Full name"/></div>
-                    <div><input type="text" placeholder="Email address"/></div>
-                    <div><input type="text" placeholder="Phone number"/></div>
-                    <div><input type="text" placeholder="Message"/></div>
+                    <form method="post" action="send_data.php">
+                        <div><input type="text" placeholder="Full name" name="fullname"/></div>
+                        <div><input type="text" placeholder="Email address" name="email"/></div>
+                        <div><input type="text" placeholder="Phone number" name="phone"/></div>
+                        <div><input type="text" placeholder="Message" name="message"/></div>
+                        <button type="submit" class="submit-btn">Send</button>
+                    </form>
                 </div>
             </div>
             <!-- Contact section end -->
