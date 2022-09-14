@@ -1,14 +1,15 @@
 var submitBtn=document.getElementById("submit");
-var fullname=document.getElementById("fullname");
-var email=document.getElementById("email");
-var phone=document.getElementById("phone");
-var message=document.getElementById("message");
+var myForm=document.getElementById("myForm");
+var fullname=document.getElementById("fullname").value;
+var email=document.getElementById("email").value;
+var phone=document.getElementById("phone").value;
+var message=document.getElementById("message").value;
+myForm.addEventListener("submit",sendData)
 
-submitBtn.addEventListener("click",sendData);
-
-function sendData(){
-   fetch('send_data.php'),{
-    method:'POST',
-    body 
-   }
+function sendData(fullname,email,phone,message){
+    var searchparams=new URLSearchParams({"fullname":fullname,"email":email,"phone":phone,"message":message});
+    fetch(`http://localhost/freelancer-frontend/send_data.php`,{
+        method:'POST',
+        body: searchparams
+    }).then(response=>response.json()).then(data=>console.log(data))
 }
