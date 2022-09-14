@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Freelancer</title>
-        <link rel="stylesheet" href="/styles/styles.css">
+        <link rel="stylesheet" href="styles/styles.css">
     </head>
     <body>
         <div class="container">
@@ -23,7 +24,7 @@
             <!-- Hero Section Start -->
             <div class="hero">
                 <div class="hero-content">
-                    <img src="/images/1.png" alt="img"/>
+                    <img src="images/1.png" alt="img"/>
                     <h1>START BOOTSTRAP</h1>
                     <div class="parent align-inline">
                         <div class="line"></div>
@@ -42,12 +43,12 @@
                 </div>
                 <div class="portfolio-images">
                     <div class="align-inline wrap-items image-row">
-                        <img src="/images/2.png"/>
-                        <img src="/images/3.png"/>
-                        <img src="/images/4.png"/>
-                        <img src="/images/5.png"/>
-                        <img src="/images/6.png"/>
-                        <img src="/images/7.png"/>
+                        <img src="images/2.png"/>
+                        <img src="images/3.png"/>
+                        <img src="images/4.png"/>
+                        <img src="images/5.png"/>
+                        <img src="images/6.png"/>
+                        <img src="images/7.png"/>
                     </div>
     
                 </div>
@@ -83,14 +84,18 @@
                     </div>
                 </div>
                 <div class="inputs-div">
-                    <div><input type="text" placeholder="Full name"/></div>
-                    <div><input type="text" placeholder="Email address"/></div>
-                    <div><input type="text" placeholder="Phone number"/></div>
-                    <div><input type="text" placeholder="Message"/></div>
+                    <form id="myForm">
+                        <div><input type="text" placeholder="Full name" id="fullname"/></div>
+                        <div><input type="text" placeholder="Email address" id="email"/></div>
+                        <div><input type="text" placeholder="Phone number" id="phone"/></div>
+                        <div><input type="text" placeholder="Message" id="message"/></div>
+                        <input id="submit" type="submit" class="submit-btn"/>
+                    </form>
                 </div>
+                <div><button id="messages-btn" class="download-btn">View Messages</button></div>
             </div>
             <!-- Contact section end -->
-            
         </div>
+        <script src="main.js"></script>
     </body>
 </html>
