@@ -5,7 +5,7 @@ var email=document.getElementById("email");
 var phone=document.getElementById("phone");
 var message=document.getElementById("message");
 var messagsBtn=document.getElementById("messages-btn");
-var messagesDiv=document.getElementById("messages-div");
+
 
 myForm.addEventListener("submit",sendData);//on submitting the form,sendData function is called
 messagsBtn.addEventListener("click",viewMessages);
